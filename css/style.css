@@ -1,0 +1,35 @@
+.md-toolbar-tools h1 {
+    font-size: inherit;
+    font-weight: inherit;
+    direction: rtl;
+    text-align: right;
+}
+.profile{
+    margin: 20px;
+    margin-top: 0;
+    width: 128px;
+    height: auto;
+}
+.title{
+    text-align: center;
+}
+.param{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+md-radio-button {
+    display: inline;
+    width: 200px;
+}
+md-radio-group{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+}
+md-card {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-bottom: 20vh;
+}

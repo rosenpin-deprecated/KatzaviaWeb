@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="initial-scale=1"/>
+    <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/sweetalert/dist/sweetalert.css">
+</head>
+<body layout="column" ng-controller="AppCtrl">
+<!-- Angular Material Dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>
+<script src="scripts/main.js"></script>
+<md-toolbar layout="row">
+    <div class="md-toolbar-tools">
+        <h1>קצביה כוס עומו</h1>
+    </div>
+</md-toolbar>
+<div layout="row" flex>
+    <div layout="column" flex id="content">
+        <md-content layout="column" flex class="md-padding">
+            <md-card ng-repeat="param in params">
+                <h2 class="param center">{{param}}</h2>
+                <md-radio-group ng-model="data">
+                    <md-radio-button class="radio" ng-repeat="person in people" ng-value="person.name">
+                        <h3 class="title">{{person.name}}</h3>
+                        <img class="profile" ng-src="{{person.pic}}"/>
+                    </md-radio-button>
+                </md-radio-group>
+            </md-card>
+            <md-button class="md-raised md-primary" ng-click="submit()">SUBMIT</md-button>
+        </md-content>
+    </div>
+</div>
+</body>
+</html>
