@@ -6,7 +6,7 @@ var app = angular.module('app', ['ngMaterial']);
 app.controller('AppCtrl', ['$scope', '$mdSidenav', function ($scope, $mdSidenav) {
     $scope.people = [{
         name: 'Girl1',
-        pic: 'https://goo.gl/t7GDwd',
+        pic: 'http://weknowyourdreams.com/images/girl/girl-06.jpg',
         value: '1'
     }, {
         name: 'Girl2',
